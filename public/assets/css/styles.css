@@ -580,7 +580,7 @@ ul.footer__links {
 .sizes li:hover {
   background-color: var(--bg-color);
 }
-.sizes li .active-link{
+.sizes .active-link{
   background-color: var(--button-color);
 }
 .add__to__cart {
