@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>20's Clothing</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header scroll-header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                20s Clothing
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="/index.html#home" class="nav__link active-link">
+                            <i class="ri-home-2-line"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__list">
+                        <a href="/index.html#new" class="nav__link">
+                            <i class="ri-price-tag-3-line"></i>
+                            <span>New</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__list">
+                        <a href="/index.html#products" class="nav__link">
+                            <i class="ri-t-shirt-2-line"></i>
+                            <span>Products</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__list" id="cart-icon" data-quantity="0">
+                        <a href="#" class="nav__link">
+                            <i class="ri-shopping-cart-line"></i>
+                            <span>Cart</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <i class="ri-moon-line" id="theme-button"></i>
+            <div class="cart">
+                <h1 class="cart__title">Your Cart</h1>
+                <div class="cart__content">
+                    
+                </div>
+                <div class="total">
+                    <h3 class="total__title">Total &nbsp;</h3>
+                    <h3 class="total__price">Rs.0</h3>
+                </div>
+                <button type="button" class="btn__buy">Buy Now</button>
+                <i class="ri-close-fill" id="close-cart"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== PRODUCT ====================-->
+    <section class="product section" id="product">
+        
+        <div class="product__container container swiper">
+            <div class="swiper-wrapper">
+                <article class="product__card swiper-slide">
+                    <img src="assets/img/home1.JPG" alt="" class="product__img main_img">
+                </article>
+    
+                <article class="product__card swiper-slide">
+                    <img src="assets/img/home2.JPG" alt="" class="product__img">
+                    
+                </article>
+    
+                <article class="product__card swiper-slide">
+                    <img src="assets/img/New1.JPG" alt="" class="product__img">
+                </article>
+    
+            </div>
+            <div class="swiper-button-prev"><i class="ri-skip-left-line"></i></div>
+            <div class="swiper-button-next"><i class="ri-skip-right-line"></i></div>
+        </div>
+        <h1 class="product__title">
+            Embroided Flames
+        </h1>
+        <p class="not__products__price">Rs.1799</p>
+        <p class="product__price">Rs.1399</p>
+        <p class="product__information">A classy oversized t-shirt with flame embroidery on 240GSM fabric <br> for a bold and stylish look.</p>
+        <p class="size__chart" id="size">
+            <ul class="sizes">
+                <li class="size" id="S">S</li>
+                <li class="size" id="M">M</li>
+                <li class="size" id="L">L</li>
+                <li class="size" id="XL">XL</li>
+                <li class="size" id="XXL">XXL</li>
+            </ul>
+        </p>
+        <button type="button" class="add__to__cart">Add To Cart</button>
+        
+    </section>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">20s Clothing</a>
+
+                <p class="footer__description">
+                    Committed to bringing you the <br>
+                    best Quality products.
+                </p>
+            </div>
+            <div class="footer__content">
+                <div>
+
+                    <h3 class="footer__title">
+                        Office Location
+                    </h3>
+                    <p class="footer__information">Pune, <br>India</p>
+                </div>
+                <div>
+                    <h3 class="footer__title">
+                        Contact us
+                    </h3>
+                    <ul class="footer__links">
+                        <li><a href="https://www.instagram.com/20s.clothing_/" target="_blank" class="footer__link"><i
+                                    class="ri-instagram-line"></i></a></li>
+                        <li><a href="https://20sclothing.netlify.app" target="_blank" class="footer__link">
+                                <i class="ri-pages-line"></i>
+                            </a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=+919146221221&text=Hello, would like to know more about 20s Clothing!"
+                                class="footer__link"><i class="ri-whatsapp-line"></i></a></li>
+                        <li><a href="https://www.instagram.com/20s.clothing_/" class="footer__link" target="_blank"><i
+                                    class="ri-facebook-box-line"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">
+                        Terms & Conditons
+                    </h3>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cart.js"></script>
+</body>
+
+</html>
