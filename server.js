@@ -58,7 +58,7 @@ app.post('/checkout', async (req, res) => {
     });
     res.json(session.url);
 });
-let PORT = process.env.PORT || 3000
+let PORT = process.env.PORT || 10000
 app.listen(PORT, () => {
-    console.log("Listening on port")
+    console.log(`Listening on port ${PORT}`)
 })
