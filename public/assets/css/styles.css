@@ -13,7 +13,7 @@
   --text-color-light: hsl(220, 4%, 55%);
   --body-color: hsl(220, 18%, 99%);
   --container-color: hsl(220, 18%, 97%);
-  --button-color: hsl(167, 71%, 61%);
+  --button-color: hsl(145, 71%, 61%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -579,6 +579,9 @@ ul.footer__links {
 }
 .sizes li:hover {
   background-color: var(--bg-color);
+}
+.sizes li .active-link{
+  background-color: var(--button-color);
 }
 .add__to__cart {
   padding: 1rem 2rem;

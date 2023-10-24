@@ -205,7 +205,13 @@ function addCartClicked(event) {
     var title = shopProducts.getElementsByClassName('product__title')[0].innerText;
     var price = shopProducts.getElementsByClassName("product__price")[0].innerText;
     var productImg = shopProducts.querySelectorAll(".main_img")[0].src
-    var size = shopProducts.querySelector(".size.active-link").id
+    var sizeele = shopProducts.querySelector(".size.active-link")
+    if (sizeele !== null) {
+    size = size.id;
+} else {
+    
+    alert("Select Your desired Size");
+}
     // console.log(title,price,size,productImg)
     addProductsToCart(title, price, size, productImg);
     updateTotal();
