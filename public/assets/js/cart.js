@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Attach the event listener to each button
     buyButtons.forEach(function (button) {
         button.addEventListener("click", () => {
-            fetch('http://localhost:10000/checkout', {
+            fetch('http://two0sclothing.onrender.com:10000/checkout', {
                 method: 'post',
                 headers: new Headers({ 'Content-Type': 'application/json' }),
                 body: JSON.stringify({
