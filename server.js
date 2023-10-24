@@ -14,6 +14,8 @@ app.use(express.json());
 app.use(cors())
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
+    const hostname = req.hostname;
+    res.send(`Server is running on domain: ${hostname}`);
 });
 
 app.get('/success', (req, res) => {
@@ -59,10 +61,7 @@ app.post('/checkout', async (req, res) => {
     res.json(session.url);
 });
 let PORT = process.env.PORT || 10000
-app.get('/', (req, res) => {
-    const hostname = req.hostname;
-    res.send(`Server is running on domain: ${hostname}`);
-});
+
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`)
 })
